@@ -1,0 +1,173 @@
+body {
+    background-color: lavender;
+
+    line-height: 1.4;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.explanation{
+    margin-left: 1em;
+
+}
+.overons{
+    font-size: xx-large;
+}
+.titels {
+    font-family: serif;
+}
+
+.wrapper {
+    display: grid;
+}
+
+/* banner */
+.banner-main {
+    display: grid;
+    background-color: black;
+
+}
+
+
+.imagee {
+    width: 100%;
+    height: 90px;
+    object-fit: contain;
+
+
+}
+
+/* navigatiebalk */
+nav.container {
+
+    padding: 20px 0px;
+    text-align: center;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* Inhoud van navigatiebalk */
+nav.container a {
+
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 5px 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* tekst van navigatiebalk */
+nav.container ul {
+    display: grid;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+/* Border from Y to X  */
+/* animaties */
+nav.borderYtoX a:before,
+nav.borderYtoX a:after {
+    position: absolute;
+    width: 0px;
+    content: "";
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+.sectie {
+    display: grid;
+}
+
+nav.borderYtoX a:before {
+    left: 0px;
+    top: 0px;
+}
+
+nav.borderYtoX a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+nav.borderYtoX a:hover:before,
+nav.borderYtoX a:hover:after {
+    height: 2px;
+    width: 100%;
+}
+
+nav.borderYtoX a.selected {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+
+}
+
+.home_background {
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 99%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+}
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+.formulier {
+    border-radius: 5px;
+    background-color: lavender;
+    padding: 20px;
+}
+table, td, th {
+    margin-top: 2em;
+    margin-left: 1em;
+    width: 80%;
+    border: 1px solid #000;
+    border-collapse: collapse; /* all borders are melted together: you don't see difference between several borders */
+}
+
+table {
+    table-layout: fixed;
+    box-sizing: border-box;
+}
+
+th {
+    text-align: left;
+}
+
+td, th {
+    padding: 1em;
+}
+.RESULT{
+    border-collapse: separate;
+    margin-top: 5em;
+    width:35%;
+}
+
